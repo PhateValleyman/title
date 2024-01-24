@@ -26,8 +26,8 @@ func printUsage() {
 	fmt.Println("Usage: " + os.Args[0] + " [title]")
 	fmt.Println("Set the terminal title.\n")
 	fmt.Println("Options:")
-	fmt.Println("      -v, --version\tDisplay script version.")
-	fmt.Println("  -?, -h, --help\tShow this help message.")
+	fmt.Println("  -h, --help\t\tShow this help message.")
+	fmt.Println("  -v, --version\t\tDisplay script version.")
 	os.Exit(0)
 }
 

@@ -2,17 +2,17 @@
 
 case "$1" in
 	-v | --version )
-		echo -e "$0 v1.0"
+		echo -e "$0 v1.1"
 		echo -e "by PhateValleyman"
 		echo -e "Jonas.Ned@outlook.com"
 		exit 0
 		;;
-	-? | -h | --help )
+	-h | --help )
 		echo -e "Usage: $0 [title]"
 		echo -e "Set the terminal title.\n"
 		echo -e "Options:"
-		echo -e "  -v, --version\tDisplay script version."
-		echo -e "  -?, -h, --help\tShow this help message."
+		echo -e "  -h, --help\t\tShow this help message."
+		echo -e "  -v, --version\t\tDisplay script version."
 		exit 0
 		;;
 esac

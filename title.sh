@@ -14,7 +14,7 @@ case "$1" in
 		echo -e "${G}Jonas.Ned@outlook.com${N}"
 		exit 0
 		;;
-	-h | --help )
+	-? | -h | --help )
 		echo -e "Usage: ${Y}$0${N} '${G}TITLE${N}'"
 		echo -e "Set terminal title to '${G}TITLE${N}'"
 		echo -e "Options:"

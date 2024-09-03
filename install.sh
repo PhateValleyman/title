@@ -1,7 +1,6 @@
 
-gcc ./title.c -o ./build/c/title
+gcc ./title.c -o ./bin/title
 
-GOOS=linux GOARCH=arm64 go build -v -x -o ./build/go/title_phone ./title.go
-GOOS=linux GOARCH=arm GOARM=7 go build -v -x -o ./build/go/title_tablet ./title.go
-GOOS=linux GOARCH=arm GOARM=5 go build -v -x -o ./build/go/title_server ./title.go
-GOOS=windows GOARCH=amd64 go build -v -x -o ./build/go/title_windows.exe ./title.go
+GOOS=android GOARCH=arm64 go build -trimpath -v -x -o ./bin/title_aarch64 ./title.go
+GOOS=linux GOARCH=arm GOARM=7 go build -trimpath -v -x -o ./bin/title_armv7 ./title.go
+GOOS=linux GOARCH=arm GOARM=5 go build -trimpath -v -x -o ./bin/title_armv5 ./title.go
